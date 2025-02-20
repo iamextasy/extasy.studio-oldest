@@ -1,0 +1,121 @@
+body {
+  background-color: #0a0a0a;
+  display: flex;
+  margin: 0px;
+  height: 100vh;
+  font-family: "Inter", serif;
+}
+
+.buttonsGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px;
+}
+
+.imgContent {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.imgContent img {
+  z-index: -2;
+  width: 100%;
+  max-width: 1480px;
+  opacity: 0.5;
+  height: 100%;
+  object-fit: contain;
+}
+
+.buttonsGroup a {
+  color: #d6d6d6;
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.1s;
+  user-select: none;
+  display: flex;
+}
+
+.button:active {
+  opacity: 0.6;
+  transition: 0.1s;
+}
+
+.button.Telegram {
+  background: radial-gradient(
+    89.5% 89.5% at 50% 10.5%,
+    #2ba2de 0%,
+    #1171a0 100%
+  );
+  color: #f5f5f5;
+  transition: 0.1s;
+}
+
+.button.Telegram:hover {
+  background: radial-gradient(
+    89.5% 89.5% at 50% 10.5%,
+    #47b9f1 0%,
+    #187eb1 100%
+  );
+}
+
+.button.Lolzteam {
+  background: radial-gradient(
+    89.5% 89.5% at 50% 10.5%,
+    #2bad72 0%,
+    #0f6b42 100%
+  );
+  color: #f5f5f5;
+}
+
+.button.Lolzteam:hover {
+  background: radial-gradient(
+    89.5% 89.5% at 50% 10.5%,
+    #39d18d 0%,
+    #13774a 100%
+  );
+}
+
+.button.Telegram::before {
+  content: "";
+}
+
+.mainContent {
+  margin: auto;
+  max-width: 500px;
+}
+
+.button.Lolzteam .icon::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-image: url('data:image/svg+xml,<svg width="237" height="216" viewBox="0 0 237 216" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_16_15" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="237" height="216"><path d="M236.983 0.422852H0.470703V215.021H236.983V0.422852Z" fill="white"/></mask><g mask="url(%23mask0_16_15)"><path fill-rule="evenodd" clip-rule="evenodd" d="M61.1504 187.392C82.8146 204.992 107.842 215.022 134.533 215.022C174.225 215.022 210.257 192.775 236.995 156.542C225.706 141.247 212.764 128.436 198.575 118.751L175.794 130.124C180.69 137.741 183.542 146.809 183.542 156.542C183.542 183.577 161.604 205.491 134.533 205.491C113.499 205.491 95.566 192.252 88.6139 173.666L61.1504 187.38V187.392ZM117.67 159.168C118.216 162.721 119.88 166.025 122.459 168.604C125.656 171.8 130.005 173.595 134.533 173.583C143.957 173.583 151.598 165.953 151.598 156.542C151.598 151.919 149.756 147.724 146.761 144.646L117.682 159.168H117.67Z" fill="%23F5F5F5"/><path d="M67.3528 156.16L233.405 76.3367L196.91 0.422852L178.062 67.507L155.412 20.3758L136.552 87.46L113.902 40.3287L95.042 107.413L72.3916 60.2816L53.5319 127.366L30.8814 80.235L0.470703 188.318L41.9809 168.365L67.3528 156.172V156.16Z" fill="%23F5F5F5"/></g></svg>');
+}
+
+.button.Telegram .icon::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-image: url('data:image/svg+xml,<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.3334 20.7315L19.3341 20.7297L19.3515 20.6862L22.3503 5.5672V5.51809C22.3503 5.14139 22.2111 4.81253 21.9082 4.61527C21.6431 4.44261 21.3384 4.43032 21.1247 4.44654C20.8986 4.46369 20.6855 4.52011 20.538 4.56707C20.4621 4.59123 20.3986 4.6145 20.3531 4.63211C20.3303 4.64095 20.3118 4.64845 20.2984 4.65403L20.2852 4.65959L3.56536 11.2185L3.56076 11.2201C3.55173 11.2234 3.53979 11.2279 3.52536 11.2335C3.49661 11.2447 3.45747 11.2607 3.41149 11.2816C3.32121 11.3225 3.19647 11.3856 3.06997 11.4722C2.85512 11.6194 2.446 11.9677 2.51508 12.5199C2.5723 12.9773 2.88761 13.2678 3.10018 13.4182C3.21412 13.4989 3.32314 13.557 3.40297 13.595C3.44341 13.6143 3.47777 13.629 3.50336 13.6394C3.51619 13.6446 3.52691 13.6488 3.53521 13.652L3.54584 13.6559L3.55263 13.6585L6.47787 14.6433C6.468 14.8268 6.4862 15.0139 6.53487 15.1986L8.00016 20.757C8.17389 21.416 8.77012 21.8751 9.45169 21.8746C10.0626 21.8742 10.6045 21.5046 10.8346 20.9532L13.1223 18.5071L17.0513 21.5193L17.1072 21.5437C17.4641 21.6995 17.7977 21.7488 18.1026 21.7072C18.4071 21.6656 18.649 21.5379 18.8308 21.3925C19.0097 21.2494 19.1322 21.0879 19.2093 20.9663C19.2485 20.9045 19.2777 20.8502 19.2979 20.8093C19.3081 20.7888 19.3161 20.7715 19.3221 20.7579L19.3297 20.7405L19.3324 20.7341L19.3334 20.7315ZM7.98527 14.8162C7.95197 14.6899 8.00425 14.5565 8.11454 14.4865L18.0366 8.1856C18.0366 8.1856 18.6202 7.8313 18.5993 8.1856C18.5993 8.1856 18.7035 8.24816 18.3907 8.53989C18.0941 8.81697 11.3191 15.358 10.6335 16.0199C10.5939 16.0581 10.5703 16.1019 10.5564 16.1551L9.45056 20.3746L7.98527 14.8162Z" fill="%23F5F5F5"/></svg>');
+}
+
+.icon {
+  display: flex;
+  gap: 8px;
+}
