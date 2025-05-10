@@ -71,6 +71,7 @@ div#four .text .title {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
+    text-align: center;
 }
 
 div#second {
@@ -189,6 +190,10 @@ div#second .text .title {
     .text-dox-container,
     .img-block {
             grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav {
+        display: none;
     }
 }
 
