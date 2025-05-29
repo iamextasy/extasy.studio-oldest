@@ -1,1 +1,193 @@
-not found
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="banner-container">
+        <div class="header">
+            <div class="text-block">
+                <div class="text">
+                    <span class="title">
+                        Название аккаунта
+                    </span>
+                    <span class="subtitle">
+                        39 Skins | Merry Mint Axe | The Ageless | Fusion | Nezumi | Rippley vs Sludge | Polar Peely |
+                        Geralt
+                        of Rivia
+                    </span>
+                </div>
+                <div class="vert-text">
+                    <div class="text">
+                        <span class="title">
+                            Стоимость аккаунта
+                        </span>
+                        <span class="subtitle">
+                            799 ₽
+                        </span>
+                    </div>
+                    <div class="text">
+                        <span class="title">
+                            Продавец аккаунта
+                        </span>
+                        <span class="subtitle">
+                            claud
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="QrCode-block">
+                <img src="https://nztcdn.com/files/11d29eb6-bcfb-42ff-8cbb-7eb51f7a02b8.webp">
+            </div>
+        </div>
+        <div class="skins">
+            <span class="count">39 скинов:</span>
+            <img src="https://nztcdn.com/files/9bed4e9c-699e-4704-814b-121e5d9fcb78.webp" alt="">
+        </div>
+        <div class="footer">
+            <div class="text with-market-logo">
+                <span class="title">
+                    Сгенерировано на
+                </span>
+                <div class="logo-market-container">
+                    <img src="https://nztcdn.com/files/e2cd9380-901b-49fc-aed9-91d72c57b020.svg" class="logo-market">
+                </div>
+            </div>
+            <div class="text right">
+                <span class="title">
+                    Данные актуальны на
+                </span>
+                <span class="subtitle">
+                    29.05.2025
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background: #000;
+        }
+
+        .banner-container {
+            width: 800px;
+            background-color: #272727;
+            color: #d6d6d6;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .banner-container .header {
+            padding: 24px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+            border-bottom: 1px solid #363636;
+        }
+
+        .banner-container .header .QrCode-block {
+            padding: 12px;
+            background-color: #fff;
+            border-radius: 20px;
+            aspect-ratio: 1 / 1;
+        }
+
+        .banner-container .header .QrCode-block img {
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
+            aspect-ratio: 1 / 1;
+        }
+
+        .banner-container .header .text,
+        .banner-container .footer .text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .banner-container .header .text .title,
+        .banner-container .footer .text .title {
+            color: #949494;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        .banner-container .header .text .subtitle,
+        .banner-container .footer .text .subtitle {
+            color: #d6d6d6;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+        }
+
+        .banner-container .header .vert-text {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .banner-container .header .text-block {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .banner-container .skins {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-bottom: 1px solid #363636;
+        }
+
+        .banner-container .skins .count {
+            color: #d6d6d6;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+        }
+
+        .banner-container .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 24px;
+        }
+
+        .banner-container .footer .text.right {
+            text-align: right;
+            align-items: flex-end;
+        }
+
+        .banner-container .footer .text .logo-market-container {
+            height: 32px;
+            background-color: #00ba7817;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 8px;
+            border-radius: 8px;
+        }
+
+        .banner-container .footer .text .logo-market-container img {
+            height: 20px;
+        }
+
+        .banner-container .footer .text.with-market-logo {
+            gap: 12px;
+        }
+    </style>
+</body>
+
+</html>
